@@ -1,0 +1,214 @@
+<head>
+    <title>My A-Frame Scene</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <a-scene>
+        <a-sound src="assets/sounds/chauve.mp3" autoplay="true" loop="true"></a-sound>
+
+        <a-sound src="assets/sounds/horreur.mp3" autoplay="true" loop="true"></a-sound>
+        <a-camera id="camera" position="0 4 2">
+            <a-cursor id="cursor" color="red" fuse="true" fuse-timeout="500"></a-cursor>
+        </a-camera>
+
+        <a-assets>
+            <img id="wall-texture" src="/assets/textures/old-wall-texture.jpeg" />
+
+            <a-asset-item id="fajita" src="/assets/fajita_dinner.glb"></a-asset-item>
+            <a-asset-item id="bed" src="/assets/hospital_bed.glb"></a-asset-item>
+            <a-asset-item id="doll" src="/assets/creepy_doll_head.glb"></a-asset-item>
+            <a-asset-item id="tv" src="/assets/ee802eec0b5742f2b036ea986b89ad88.glb"></a-asset-item>
+            <a-asset-item id="chucky" src="/assets/chucky.glb"></a-asset-item>
+            <a-asset-item id="candle" src="/assets/candle.glb"></a-asset-item>
+            <a-asset-item id="candles" src="/assets/candles.glb"></a-asset-item>
+            <a-asset-item id="door" src="/assets/door.glb"></a-asset-item>
+            <a-asset-item id="broken-mirror" src="/assets/old_broken_mirror.glb"></a-asset-item>
+            <a-asset-item id="night-table" src="/assets/bedside_table_01_2.glb"></a-asset-item>
+            <a-asset-item id="mannequins" src="/assets/mannequins.glb"></a-asset-item>
+            <a-asset-item id="bat" src="/assets/bat.glb"></a-asset-item>
+            <a-asset-item id="chair" src="/assets/post_apocalyptic_bloody_chair.glb"></a-asset-item>
+        </a-assets>
+
+        <a-entity position="-7 0 -2">
+            <a-entity gltf-model="#chair" scale="0.04 0.04 0.04"></a-entity>
+        </a-entity>
+
+        <a-entity position="-8 2 -10">
+            <a-entity gltf-model="#mannequins" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 5 -10">
+            <a-entity gltf-model="#broken-mirror" scale="9 9 9"></a-entity>
+        </a-entity>
+
+        <a-entity position="0 0 -15">
+            <a-entity gltf-model="#fajita" rotation="0 45 0" scale="0.01 0.01 0.01"></a-entity>
+        </a-entity>
+
+        <a-entity position="5 7 -8">
+            <a-entity gltf-model="#candle" rotation="0 25 0" scale="1 1 1"></a-entity>
+        </a-entity>
+
+        <a-entity position="0 13 -15">
+            <a-entity gltf-model="#candles" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-6 8 -10">
+            <a-entity gltf-model="#candles" rotation="0 70 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="6 7 -5">
+            <a-entity gltf-model="#candles" rotation="0 30 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 0 -30" rotation="0 0 0" animation="property: rotation; to: 0 45 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 5 -30" rotation="0 0 0" animation="property: rotation; to: 0 45 10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 10 -30" rotation="0 0 0" animation="property: rotation; to: 0 45 20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 0 -35" rotation="0 0 0" animation="property: rotation; to: 0 55 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 5 -35" rotation="0 0 0" animation="property: rotation; to: 0 55 10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 10 -35" rotation="0 0 0" animation="property: rotation; to: 0 55 20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 0 -40" rotation="0 0 0" animation="property: rotation; to: 0 65 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 5 -40" rotation="0 0 0" animation="property: rotation; to: 0 65 10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="9 10 -40" rotation="0 0 0" animation="property: rotation; to: 0 65 20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 -90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 0 -30" rotation="0 0 0" animation="property: rotation; to: 0 -45 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 5 -30" rotation="0 0 0" animation="property: rotation; to: 0 -45 -10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 10 -30" rotation="0 0 0" animation="property: rotation; to: 0 -45 -20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 0 -35" rotation="0 0 0" animation="property: rotation; to: 0 -55 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 5 -35" rotation="0 0 0" animation="property: rotation; to: 0 -55 -10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 10 -35" rotation="0 0 0" animation="property: rotation; to: 0 -55 -20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3" light="type: spot; angle: -45"></a-entity>
+            <!--<a-entity light="couleur:#FFFFFF; intensité:1,5" position="0 0 0"> </a-entity> -->
+        </a-entity>
+
+        <a-entity position="-9 0 -40" rotation="0 0 0" animation="property: rotation; to: 0 -65 0; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 5 -40" rotation="0 0 0" animation="property: rotation; to: 0 -65 -10; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="-9 10 -40" rotation="0 0 0" animation="property: rotation; to: 0 -65 -20; dur: 10000">
+            <a-entity gltf-model="#chucky" rotation="0 90 0" scale="3 3 3"></a-entity>
+        </a-entity>
+
+        <a-entity position="8 -1 0">
+            <a-entity gltf-model="#night-table" rotation="0 180 0" scale="0.05 0.05 0.05"></a-entity>
+        </a-entity>
+
+        <a-entity id="scary-corridor">
+            <a-plane
+                src="#wall-texture"
+                id="roof"
+                position="0 20 -5"
+                rotation="90 0 0"
+                width="25"
+                height="600"
+                color="orange"
+            ></a-plane>
+            <a-plane
+                src="#wall-texture"
+                id="ground"
+                position="0 -2 -5"
+                rotation="-90 0 0"
+                width="25"
+                height="600"
+                color="orange"
+            ></a-plane>
+            <a-plane
+                src="#wall-texture"
+                id="back-wall"
+                position="0 7 10"
+                double-sided="true"
+                rotation="180 0 0"
+                width="25"
+                height="25"
+                color="green"
+            ></a-plane>
+            <a-plane
+                src="#wall-texture"
+                id="left-wall"
+                position="-10 0 0"
+                rotation="0 90 0"
+                width="600"
+                height="40"
+                depth="2000"
+                color="green"
+            ></a-plane>
+
+            <a-plane
+                src="#wall-texture"
+                id="right-wall"
+                position="10 0 0"
+                rotation="0 -90 0"
+                width="600"
+                height="40"
+                color="yellow"
+            ></a-plane>
+            <a-plane
+                src="#wall-texture"
+                id="disappearing-wall"
+                position="0 7 -20"
+                rotation="0 0 0"
+                width="25"
+                height="25"
+                color="green"
+            ></a-plane>
+            <a-plane
+                src="#wall-texture"
+                id="chucky-wall"
+                position="0 7 -50"
+                double-sided="true"
+                rotation="0 0 0"
+                width="25"
+                height="25"
+                color="green"
+            ></a-plane>
+        </a-entity>
+    </a-scene>
+</body>
