@@ -1,3 +1,7 @@
 .a-modal {
-    display: none!important;
+    display: none !important;
+}
+
+body {
+    background: black;
 }
